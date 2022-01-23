@@ -1,0 +1,31 @@
+{
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"highlight": { "lsRanges" : true }
+
+			}
+		}
+	},
+	"diagnostic.diagnosticRefresh": true,
+	"coc.preferences.formatOnType":true,
+  "diagnostic.errorSign": "✘",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "➤",
+  "diagnostic.enableHighlightLineNumber": true,
+  "codeLens.enable": true,
+  "signature.enable": true,
+
+  "clangd.semanticHighlighting":true,
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+
+  "coc.preferences.colorSupport": true,
+  "highlight.colors.enable": true
+
+}
